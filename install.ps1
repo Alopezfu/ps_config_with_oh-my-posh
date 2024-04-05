@@ -1,4 +1,4 @@
-$PS_PROFILE = "https://raw.githubusercontent.com/devblackops/Terminal-Icons/main/psakeFile.ps1"
+$PS_PROFILE = "https://raw.githubusercontent.com/Alopezfu/ps_config_with_oh-my-posh/main/profile.ps1"
 
 Write-Host ''                                                  ,d8888b  d8,                               d8,         d8b                   d8b                                                                 d8b      
                                                   88P'    `8P                               `8P    d8P   ?88                   ?88                                                                 ?88      
