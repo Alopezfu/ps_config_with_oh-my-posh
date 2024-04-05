@@ -1,13 +1,21 @@
 $PS_PROFILE = "https://raw.githubusercontent.com/Alopezfu/ps_config_with_oh-my-posh/main/profile.ps1"
+$BANNER = @"
+ 
+  ██████╗ ███████╗     ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+  ██╔══██╗██╔════╝    ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+  ██████╔╝███████╗    ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+  ██╔═══╝ ╚════██║    ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+  ██║     ███████║    ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+  ╚═╝     ╚══════╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
+  
+          by github.com/Alopezfu/
+           github.com/Alopezfu/ps_config_with_oh-my-posh
+ 
+"@
 
-Write-Host '
-  ____            _   _       ____        _           _____          _             
- |  _ \ ___  _ __| |_(_) __ _| __ )  ___ | |_ ___    |_   _|__   ___| |_ ___  _ __ 
- | |_) / _ \| '__| __| |/ _` |  _ \ / _ \| __/ _ \_____| |/ _ \ / __| __/ _ \| '__|
- |  __/ (_) | |  | |_| | (_| | |_) | (_) | ||  __/_____| | (_) | (__| || (_) | |   
- |_|   \___/|_|   \__|_|\__, |____/ \___/ \__\___|     |_|\___/ \___|\__\___/|_|   
-                         |___/                                                      
-' -ForegroundColor Yellow
+Clear
+Write-Host -ForegroundColor Yellow $BANNER
+Sleep 4
 
 Write-Host "Copy Powershell profile"
 (Invoke-WebRequest $PS_PROFILE).Content > $PROFILE
