@@ -59,6 +59,6 @@ cp .\Microsoft.PowerShell_profile.ps1 $PROFILE
         "selectionBackground": "#6a517c",
         "white": "#CCCCCC",
         "yellow": "#C19C00"
-    }
+        }
 ]
 ```
