@@ -19,6 +19,8 @@ Install-Module posh-git
 
 ## Config autostart oh-my-posh
 ```ps1
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Unblock-File $PROFILE
 New-Item -Path $PROFILE -Type File -Force
 cp .\Microsoft.PowerShell_profile.ps1 $PROFILE
 ```
